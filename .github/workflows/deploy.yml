@@ -11,12 +11,15 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
-          cache: 'pnpm'
       - name: install pnpm
-        run: npm install pnpm -g
+        uses: pnpm/action-setup@v2.0.1
+        with:
+          version: next
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+          cache: 'pnpm'
       - name: install dependencies
         run: pnpm install
       - name: build
