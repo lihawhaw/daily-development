@@ -2,6 +2,8 @@ lockfileVersion: 5.3
 
 specifiers:
   '@ant-design/pro-layout': ^6.5.0
+  '@antv/data-set': ^0.11.8
+  '@antv/g2': ^4.1.39
   '@types/react': ^17.0.38
   '@types/react-dom': ^17.0.11
   '@typescript-eslint/eslint-plugin': ^5.9.1
@@ -31,6 +33,8 @@ specifiers:
 
 dependencies:
   '@ant-design/pro-layout': 6.32.3_fe8d130e25f6a6aae390c6034526cbbb
+  '@antv/data-set': 0.11.8
+  '@antv/g2': 4.1.39
   antd: 4.18.3_react-dom@17.0.2+react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
@@ -161,6 +165,191 @@ packages:
       lodash: 4.17.21
       react: 17.0.2
       resize-observer-polyfill: 1.5.1
+
+  /@antv/adjust/0.2.3:
+    resolution: {integrity: sha1-w4hKaAwyZMwSXX8qtTmOihwLlAE=, tarball: '@antv/adjust/download/@antv/adjust-0.2.3.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      tslib: 1.14.1
+    dev: false
+
+  /@antv/attr/0.3.2:
+    resolution: {integrity: sha1-5YZrZIcMYvOpwluKYfZUuiv9oFE=, tarball: '@antv/attr/download/@antv/attr-0.3.2.tgz'}
+    dependencies:
+      '@antv/color-util': 2.0.6
+      '@antv/util': 2.0.17
+      tslib: 1.14.1
+    dev: false
+
+  /@antv/color-util/2.0.6:
+    resolution: {integrity: sha1-XhKbuc4/K5MJtSECs9ySlDDMwBY=, tarball: '@antv/color-util/download/@antv/color-util-2.0.6.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/component/0.8.22:
+    resolution: {integrity: sha512-IFG01XxXZSIh5pN8y6tqOtxivz/Y3LMpcNm0RGW6QM/2ATj2h6BvLXjnJw/eWOJnBR8+4nS3xTAcaH4113KI8Q==, tarball: '@antv/component/download/@antv/component-0.8.22.tgz'}
+    dependencies:
+      '@antv/color-util': 2.0.6
+      '@antv/dom-util': 2.0.3
+      '@antv/g-base': 0.5.9
+      '@antv/matrix-util': 3.1.0-beta.3
+      '@antv/path-util': 2.0.15
+      '@antv/scale': 0.3.14
+      '@antv/util': 2.0.17
+      fecha: 4.2.1
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/coord/0.3.1:
+    resolution: {integrity: sha1-mC4mHYoeBqGY61GOp6zCDth1oBk=, tarball: '@antv/coord/download/@antv/coord-0.3.1.tgz'}
+    dependencies:
+      '@antv/matrix-util': 3.1.0-beta.3
+      '@antv/util': 2.0.17
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/data-set/0.11.8:
+    resolution: {integrity: sha1-dBPpAGJIY9Wl87RoQf0An8TypP8=, tarball: '@antv/data-set/download/@antv/data-set-0.11.8.tgz'}
+    dependencies:
+      '@antv/hierarchy': 0.6.8
+      '@antv/util': 2.0.17
+      d3-composite-projections: 1.4.0
+      d3-dsv: 1.2.0
+      d3-geo: 1.6.4
+      d3-geo-projection: 2.1.2
+      d3-hexjson: 1.1.1
+      d3-hierarchy: 1.1.9
+      d3-sankey: 0.9.1
+      d3-voronoi: 1.1.4
+      dagre: 0.8.5
+      point-at-length: 1.1.0
+      regression: 2.0.1
+      simple-statistics: 6.1.1
+      topojson-client: 3.1.0
+      wolfy87-eventemitter: 5.2.9
+    dev: false
+
+  /@antv/dom-util/2.0.3:
+    resolution: {integrity: sha1-y9FYsciODopNhlhxpZabEZBVT/U=, tarball: '@antv/dom-util/download/@antv/dom-util-2.0.3.tgz'}
+    dependencies:
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/event-emitter/0.1.2:
+    resolution: {integrity: sha1-oXt8uG5tBxiA3Gv7IydW+IYk7Lw=, tarball: '@antv/event-emitter/download/@antv/event-emitter-0.1.2.tgz'}
+    dev: false
+
+  /@antv/g-base/0.5.9:
+    resolution: {integrity: sha1-WNDhHYUVetoUCPvfJPT0aPQOWc0=, tarball: '@antv/g-base/download/@antv/g-base-0.5.9.tgz'}
+    dependencies:
+      '@antv/event-emitter': 0.1.2
+      '@antv/g-math': 0.1.7
+      '@antv/matrix-util': 3.1.0-beta.3
+      '@antv/path-util': 2.0.15
+      '@antv/util': 2.0.17
+      '@types/d3-timer': 2.0.1
+      d3-ease: 1.0.7
+      d3-interpolate: 1.4.0
+      d3-timer: 1.0.10
+      detect-browser: 5.3.0
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/g-canvas/0.5.12:
+    resolution: {integrity: sha1-L8QNztaZTwdPIjQeZdVve71Sdfc=, tarball: '@antv/g-canvas/download/@antv/g-canvas-0.5.12.tgz'}
+    dependencies:
+      '@antv/g-base': 0.5.9
+      '@antv/g-math': 0.1.7
+      '@antv/matrix-util': 3.1.0-beta.3
+      '@antv/path-util': 2.0.15
+      '@antv/util': 2.0.17
+      gl-matrix: 3.4.3
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/g-math/0.1.7:
+    resolution: {integrity: sha1-bsJ2kmn3zLZ+WBQNVznfdARswE4=, tarball: '@antv/g-math/download/@antv/g-math-0.1.7.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      gl-matrix: 3.4.3
+    dev: false
+
+  /@antv/g-svg/0.5.6:
+    resolution: {integrity: sha1-cLL6mAxDGzmtPFtLU+NqHWCVfWU=, tarball: '@antv/g-svg/download/@antv/g-svg-0.5.6.tgz'}
+    dependencies:
+      '@antv/g-base': 0.5.9
+      '@antv/g-math': 0.1.7
+      '@antv/util': 2.0.17
+      detect-browser: 5.3.0
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/g2/4.1.39:
+    resolution: {integrity: sha512-63HQs45ysK/AvCci658rWqM5dmZoJvPFGd3VDOVQVnyZI6PF3hxFOXpGdAgb/ORGdd5smsC2bhKjDLvN56QzcA==, tarball: '@antv/g2/download/@antv/g2-4.1.39.tgz'}
+    dependencies:
+      '@antv/adjust': 0.2.3
+      '@antv/attr': 0.3.2
+      '@antv/color-util': 2.0.6
+      '@antv/component': 0.8.22
+      '@antv/coord': 0.3.1
+      '@antv/dom-util': 2.0.3
+      '@antv/event-emitter': 0.1.2
+      '@antv/g-base': 0.5.9
+      '@antv/g-canvas': 0.5.12
+      '@antv/g-svg': 0.5.6
+      '@antv/matrix-util': 3.1.0-beta.3
+      '@antv/path-util': 2.0.15
+      '@antv/scale': 0.3.14
+      '@antv/util': 2.0.17
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/hierarchy/0.6.8:
+    resolution: {integrity: sha1-t3xJCpwt1toYbLrO4OeIe4wbP6Q=, tarball: '@antv/hierarchy/download/@antv/hierarchy-0.6.8.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+    dev: false
+
+  /@antv/matrix-util/3.0.4:
+    resolution: {integrity: sha1-6hPxWKovtLovuNa2tWHsRn6jrCA=, tarball: '@antv/matrix-util/download/@antv/matrix-util-3.0.4.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      gl-matrix: 3.4.3
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/matrix-util/3.1.0-beta.3:
+    resolution: {integrity: sha1-4GHej6e+BGBaFVxpzFzpCC7t3e4=, tarball: '@antv/matrix-util/download/@antv/matrix-util-3.1.0-beta.3.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      gl-matrix: 3.4.3
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/path-util/2.0.15:
+    resolution: {integrity: sha1-pvaR38i3vOW+fwqrtb1hSWQyVjE=, tarball: '@antv/path-util/download/@antv/path-util-2.0.15.tgz'}
+    dependencies:
+      '@antv/matrix-util': 3.0.4
+      '@antv/util': 2.0.17
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/scale/0.3.14:
+    resolution: {integrity: sha1-Bxj4ZRNo5cmNtWEgZRMqjIu83kg=, tarball: '@antv/scale/download/@antv/scale-0.3.14.tgz'}
+    dependencies:
+      '@antv/util': 2.0.17
+      fecha: 4.2.1
+      tslib: 2.3.1
+    dev: false
+
+  /@antv/util/2.0.17:
+    resolution: {integrity: sha1-6O9CrKeJKBWyKSafPdEMazx1l6k=, tarball: '@antv/util/download/@antv/util-2.0.17.tgz'}
+    dependencies:
+      csstype: 3.0.10
+      tslib: 2.3.1
+    dev: false
 
   /@babel/code-frame/7.12.11:
     resolution: {integrity: sha1-9K1DWqJj25NbjxDyxVLSP7cWpj8=, tarball: '@babel/code-frame/download/@babel/code-frame-7.12.11.tgz'}
@@ -905,6 +1094,10 @@ packages:
       '@babel/types': 7.16.8
     dev: true
 
+  /@types/d3-timer/2.0.1:
+    resolution: {integrity: sha1-/7ZiDSkGJPNyaqNiwMiktEyNcgA=, tarball: '@types/d3-timer/download/@types/d3-timer-2.0.1.tgz'}
+    dev: false
+
   /@types/eslint-visitor-keys/1.0.0:
     resolution: {integrity: sha1-HuMNeVRMqE1o1LPNsK9PIFZj3S0=, tarball: '@types/eslint-visitor-keys/download/@types/eslint-visitor-keys-1.0.0.tgz'}
     dev: true
@@ -1643,6 +1836,10 @@ packages:
   /abab/2.0.5:
     resolution: {integrity: sha1-wLZ4+zLWD8EhnHhNaoJv44Wut5o=, tarball: abab/download/abab-2.0.5.tgz}
     dev: true
+
+  /abs-svg-path/0.1.1:
+    resolution: {integrity: sha1-32Acjo0roQ1KdtYl4japo5wnI78=, tarball: abs-svg-path/download/abs-svg-path-0.1.1.tgz}
+    dev: false
 
   /acorn-globals/4.3.4:
     resolution: {integrity: sha1-n6GSat3BHJcwjE5m163Q1Awycuc=, tarball: acorn-globals/download/acorn-globals-4.3.4.tgz}
@@ -2820,6 +3017,118 @@ packages:
   /csstype/3.0.10:
     resolution: {integrity: sha512-2u44ZG2OcNUO9HDp/Jl8C07x6pU/eTR3ncV91SiK3dhG9TWvRVsCoJw14Ckx5DgWkzGA3waZWO3d7pgqpUI/XA==, tarball: csstype/download/csstype-3.0.10.tgz}
 
+  /d3-array/1.2.4:
+    resolution: {integrity: sha1-Y1zk1e6nWfb2BYY9vPww7cc39x8=, tarball: d3-array/download/d3-array-1.2.4.tgz}
+    dev: false
+
+  /d3-array/2.12.1:
+    resolution: {integrity: sha1-4gtBqvzf/fXVCSgATs7PgVpGXoE=, tarball: d3-array/download/d3-array-2.12.1.tgz}
+    dependencies:
+      internmap: 1.0.1
+    dev: false
+
+  /d3-collection/1.0.7:
+    resolution: {integrity: sha1-NJvSqpl32wcQkcExRNXk8WtbMQ4=, tarball: d3-collection/download/d3-collection-1.0.7.tgz}
+    dev: false
+
+  /d3-color/1.4.1:
+    resolution: {integrity: sha1-xSACv4hGraRCTVXZeYL+8m6zvIo=, tarball: d3-color/download/d3-color-1.4.1.tgz}
+    dev: false
+
+  /d3-composite-projections/1.4.0:
+    resolution: {integrity: sha1-J7GC+mNaWGk0n+kRzgGAuXTRfxI=, tarball: d3-composite-projections/download/d3-composite-projections-1.4.0.tgz}
+    dependencies:
+      d3-geo: 2.0.2
+      d3-path: 2.0.0
+    dev: false
+
+  /d3-dsv/1.2.0:
+    resolution: {integrity: sha1-nV91w6X4q9YR900/WEew1DOLiFw=, tarball: d3-dsv/download/d3-dsv-1.2.0.tgz}
+    hasBin: true
+    dependencies:
+      commander: 2.20.3
+      iconv-lite: 0.4.24
+      rw: 1.3.3
+    dev: false
+
+  /d3-ease/1.0.7:
+    resolution: {integrity: sha1-moNIkO+LiujFWLL+Vb1X9Zk7heI=, tarball: d3-ease/download/d3-ease-1.0.7.tgz}
+    dev: false
+
+  /d3-geo-projection/2.1.2:
+    resolution: {integrity: sha1-ffjh6dBG1jHGUJ9+UxNX1K3CSqM=, tarball: d3-geo-projection/download/d3-geo-projection-2.1.2.tgz}
+    hasBin: true
+    dependencies:
+      commander: 2.20.3
+      d3-array: 1.2.4
+      d3-geo: 1.6.4
+    dev: false
+
+  /d3-geo/1.6.4:
+    resolution: {integrity: sha1-8g4eRhyxhF9ai+Vatvh2VCp+MZk=, tarball: d3-geo/download/d3-geo-1.6.4.tgz}
+    dependencies:
+      d3-array: 1.2.4
+    dev: false
+
+  /d3-geo/2.0.2:
+    resolution: {integrity: sha1-wGXBtx/oxfG+ZX5fQ9m90BA4PEA=, tarball: d3-geo/download/d3-geo-2.0.2.tgz}
+    dependencies:
+      d3-array: 2.12.1
+    dev: false
+
+  /d3-hexjson/1.1.1:
+    resolution: {integrity: sha1-oeJk/5A7sJuPj0vFnHJEepH0YP4=, tarball: d3-hexjson/download/d3-hexjson-1.1.1.tgz}
+    dependencies:
+      d3-array: 1.2.4
+    dev: false
+
+  /d3-hierarchy/1.1.9:
+    resolution: {integrity: sha1-L2vuJMqupD+Nw3VF+gFihVlkeoM=, tarball: d3-hierarchy/download/d3-hierarchy-1.1.9.tgz}
+    dev: false
+
+  /d3-interpolate/1.4.0:
+    resolution: {integrity: sha1-Um554tgNqjg/ngwcHH3MDwWD6Yc=, tarball: d3-interpolate/download/d3-interpolate-1.4.0.tgz}
+    dependencies:
+      d3-color: 1.4.1
+    dev: false
+
+  /d3-path/1.0.9:
+    resolution: {integrity: sha1-SMBQux/owmJJOoyvVSTj6VkXAc8=, tarball: d3-path/download/d3-path-1.0.9.tgz}
+    dev: false
+
+  /d3-path/2.0.0:
+    resolution: {integrity: sha1-VdhqwTGgVIra4kHuv7VrRYLdCdg=, tarball: d3-path/download/d3-path-2.0.0.tgz}
+    dev: false
+
+  /d3-sankey/0.9.1:
+    resolution: {integrity: sha1-uFAUWjKEERY23eyQ39qMZJGb7k4=, tarball: d3-sankey/download/d3-sankey-0.9.1.tgz}
+    dependencies:
+      d3-array: 1.2.4
+      d3-collection: 1.0.7
+      d3-shape: 1.3.7
+    dev: false
+
+  /d3-shape/1.3.7:
+    resolution: {integrity: sha1-32OAG+B7yYa8VPY3ibT+UCmStdc=, tarball: d3-shape/download/d3-shape-1.3.7.tgz}
+    dependencies:
+      d3-path: 1.0.9
+    dev: false
+
+  /d3-timer/1.0.10:
+    resolution: {integrity: sha1-3+dripF0iDGxO22ceT/71QjdneU=, tarball: d3-timer/download/d3-timer-1.0.10.tgz}
+    dev: false
+
+  /d3-voronoi/1.1.4:
+    resolution: {integrity: sha1-3Tx412U9K7NZKErkeGRdlZRMgpc=, tarball: d3-voronoi/download/d3-voronoi-1.1.4.tgz}
+    dev: false
+
+  /dagre/0.8.5:
+    resolution: {integrity: sha1-ujCwBV2sErbB/MJHgXRCd30Gr+4=, tarball: dagre/download/dagre-0.8.5.tgz}
+    dependencies:
+      graphlib: 2.1.8
+      lodash: 4.17.21
+    dev: false
+
   /dashdash/1.14.1:
     resolution: {integrity: sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=, tarball: dashdash/download/dashdash-1.14.1.tgz}
     engines: {node: '>=0.10'}
@@ -2945,6 +3254,10 @@ packages:
     dependencies:
       inherits: 2.0.4
       minimalistic-assert: 1.0.1
+    dev: false
+
+  /detect-browser/5.3.0:
+    resolution: {integrity: sha512-53rsFbGdwMwlF7qvCt0ypLM5V5/Mbl0szB7GPN8y9NCcbknYOeVVXdrXEq+90IwAfrrzt6Hd+u2E2ntakICU8w==, tarball: detect-browser/download/detect-browser-5.3.0.tgz}
     dev: false
 
   /detect-newline/3.1.0:
@@ -3704,6 +4017,10 @@ packages:
       bser: 2.1.1
     dev: true
 
+  /fecha/4.2.1:
+    resolution: {integrity: sha1-CoOtj4bvYqCR4iu1oDnNA9I+7M4=, tarball: fecha/download/fecha-4.2.1.tgz}
+    dev: false
+
   /figures/2.0.0:
     resolution: {integrity: sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=, tarball: figures/download/figures-2.0.0.tgz}
     engines: {node: '>=4'}
@@ -3936,6 +4253,10 @@ packages:
       assert-plus: 1.0.0
     dev: true
 
+  /gl-matrix/3.4.3:
+    resolution: {integrity: sha1-/BGR6DIACf1NIOkzlZXGBB3cIsk=, tarball: gl-matrix/download/gl-matrix-3.4.3.tgz}
+    dev: false
+
   /glob-parent/5.1.2:
     resolution: {integrity: sha1-hpgyxYA0/mikCTwX3BXoNA2EAcQ=, tarball: glob-parent/download/glob-parent-5.1.2.tgz}
     engines: {node: '>= 6'}
@@ -3987,6 +4308,12 @@ packages:
   /graceful-fs/4.2.9:
     resolution: {integrity: sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==, tarball: graceful-fs/download/graceful-fs-4.2.9.tgz}
     dev: true
+
+  /graphlib/2.1.8:
+    resolution: {integrity: sha1-V2HUFHN4cAhMkux7XbywWSydNdo=, tarball: graphlib/download/graphlib-2.1.8.tgz}
+    dependencies:
+      lodash: 4.17.21
+    dev: false
 
   /growly/1.3.0:
     resolution: {integrity: sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=, tarball: growly/download/growly-1.3.0.tgz}
@@ -4202,7 +4529,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       safer-buffer: 2.1.2
-    dev: true
 
   /identity-obj-proxy/3.0.0:
     resolution: {integrity: sha1-lNK9qWCERT7zb7xarsN+D3nx/BQ=, tarball: identity-obj-proxy/download/identity-obj-proxy-3.0.0.tgz}
@@ -4323,6 +4649,10 @@ packages:
       has: 1.0.3
       side-channel: 1.0.4
     dev: true
+
+  /internmap/1.0.1:
+    resolution: {integrity: sha1-ABfMijuZYF8DAvKxmNJy4BXl35U=, tarball: internmap/download/internmap-1.0.1.tgz}
+    dev: false
 
   /invariant/2.2.4:
     resolution: {integrity: sha1-YQ88ksk1nOHbYW5TgAjSP/NRWOY=, tarball: invariant/download/invariant-2.2.4.tgz}
@@ -6166,6 +6496,10 @@ packages:
       lines-and-columns: 1.2.4
     dev: true
 
+  /parse-svg-path/0.1.2:
+    resolution: {integrity: sha1-en7A0esG+lMlx9PgCbhZoJtdSes=, tarball: parse-svg-path/download/parse-svg-path-0.1.2.tgz}
+    dev: false
+
   /parse5/5.1.0:
     resolution: {integrity: sha1-xZNByXI/QUxFKXVWTHwApo1YrNI=, tarball: parse5/download/parse5-5.1.0.tgz}
     dev: true
@@ -6290,6 +6624,14 @@ packages:
   /pn/1.1.0:
     resolution: {integrity: sha1-4vTO8OIZ9GPBeas3Rj5OHs3Muvs=, tarball: pn/download/pn-1.1.0.tgz}
     dev: true
+
+  /point-at-length/1.1.0:
+    resolution: {integrity: sha1-CtcuvQmA1/WhqxIpbAVfnrazDlc=, tarball: point-at-length/download/point-at-length-1.1.0.tgz}
+    dependencies:
+      abs-svg-path: 0.1.1
+      isarray: 0.0.1
+      parse-svg-path: 0.1.2
+    dev: false
 
   /posix-character-classes/0.1.1:
     resolution: {integrity: sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=, tarball: posix-character-classes/download/posix-character-classes-0.1.1.tgz}
@@ -7557,6 +7899,10 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /regression/2.0.1:
+    resolution: {integrity: sha1-jSnD6CJKEIUMNeM36FqLL6w7DIc=, tarball: regression/download/regression-2.0.1.tgz}
+    dev: false
+
   /remove-trailing-separator/1.1.0:
     resolution: {integrity: sha1-wkvOKig62tW8P1jg1IJJuSN52O8=, tarball: remove-trailing-separator/download/remove-trailing-separator-1.1.0.tgz}
     dev: true
@@ -7760,6 +8106,10 @@ packages:
       queue-microtask: 1.2.3
     dev: true
 
+  /rw/1.3.3:
+    resolution: {integrity: sha1-P4Yt+pGrdmsUiF700BEkv9oHT7Q=, tarball: rw/download/rw-1.3.3.tgz}
+    dev: false
+
   /rxjs/6.6.7:
     resolution: {integrity: sha512-hTdwr+7yYNIT5n4AMYp85KA6yw2Va0FLa3Rguvbpa4W3I5xynaBZo41cM3XM+4Q6fRMj3sBYIR1VAmZMXYJvRQ==, tarball: rxjs/download/rxjs-6.6.7.tgz}
     engines: {npm: '>=2.0.0'}
@@ -7948,6 +8298,10 @@ packages:
 
   /signal-exit/3.0.6:
     resolution: {integrity: sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==, tarball: signal-exit/download/signal-exit-3.0.6.tgz}
+
+  /simple-statistics/6.1.1:
+    resolution: {integrity: sha1-46B5n/xJkU1vQhxaSsWF9qE+K60=, tarball: simple-statistics/download/simple-statistics-6.1.1.tgz}
+    dev: false
 
   /sisteransi/1.0.5:
     resolution: {integrity: sha1-E01oEpd1ZDfMBcoBNw06elcQde0=, tarball: sisteransi/download/sisteransi-1.0.5.tgz}
@@ -8516,6 +8870,13 @@ packages:
   /toggle-selection/1.0.6:
     resolution: {integrity: sha1-bkWxJj8gF/oKzH2J14sVuL932jI=, tarball: toggle-selection/download/toggle-selection-1.0.6.tgz}
 
+  /topojson-client/3.1.0:
+    resolution: {integrity: sha1-Iuix7QiiuSL+60r29Ttu8JpGe5k=, tarball: topojson-client/download/topojson-client-3.1.0.tgz}
+    hasBin: true
+    dependencies:
+      commander: 2.20.3
+    dev: false
+
   /tough-cookie/2.5.0:
     resolution: {integrity: sha1-zZ+yoKodWhK0c72fuW+j3P9lreI=, tarball: tough-cookie/download/tough-cookie-2.5.0.tgz}
     engines: {node: '>=0.8'}
@@ -8548,11 +8909,9 @@ packages:
 
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==, tarball: tslib/download/tslib-1.14.1.tgz}
-    dev: true
 
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==, tarball: tslib/download/tslib-2.3.1.tgz}
-    dev: true
 
   /tsutils/3.21.0_typescript@3.9.10:
     resolution: {integrity: sha1-tIcX05TOpsHglpg+7Vjp1hcVtiM=, tarball: tsutils/download/tsutils-3.21.0.tgz}
@@ -8977,6 +9336,10 @@ packages:
     dependencies:
       isexe: 2.0.0
     dev: true
+
+  /wolfy87-eventemitter/5.2.9:
+    resolution: {integrity: sha1-6Hn3cLMPu2USqK+7Mww4hZEJnCo=, tarball: wolfy87-eventemitter/download/wolfy87-eventemitter-5.2.9.tgz}
+    dev: false
 
   /word-wrap/1.2.3:
     resolution: {integrity: sha1-YQY29rH3A4kb00dxzLF/uTtHB5w=, tarball: word-wrap/download/word-wrap-1.2.3.tgz}

@@ -5,6 +5,11 @@
   //   component: './domain-filing',
   // },
   {
+    path: '/zhifangtu',
+    layout: false,
+    component: './data-analysis',
+  },
+  {
     path: '/welcome',
     layout: false,
     component: './welcome',
