@@ -8,16 +8,13 @@ const { TabPane } = Tabs
 export default function DomainFilingPage() {
   const images = [
     {
-      sourceSrc: 'https://picgo.sh.lihaha.cloud/PicGo/20200504194905.jpg',
+      sourceSrc: 'https://cdn.tx.picgo.lihaha.cloud/app/202201161330418.webp',
     },
     {
-      sourceSrc: 'https://picgo.sh.lihaha.cloud/PicGo/20200418155344.gif',
+      sourceSrc: 'https://cdn.tx.picgo.lihaha.cloud/app/202201161331953.webp',
     },
     {
-      sourceSrc: 'https://picgo.sh.lihaha.cloud/PicGo/20200418151223.jpg',
-    },
-    {
-      sourceSrc: 'https://picgo.sh.lihaha.cloud/PicGo/20200520203757.jpg',
+      sourceSrc: 'https://cdn.tx.picgo.lihaha.cloud/app/202201161331254.webp',
     },
   ]
 

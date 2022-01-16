@@ -37,4 +37,7 @@ export default defineConfig({
     edge: false,
     ios: false,
   },
+  cssLoader: {
+    localsConvention: 'camelCase',
+  },
 })
