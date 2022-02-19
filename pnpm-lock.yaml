@@ -18,6 +18,9 @@ specifiers:
   '@umijs/plugin-preact': ^1.0.2
   '@umijs/test': ^3.5.20
   antd: ^4.18.3
+  antd-dayjs-webpack-plugin: ^1.0.6
+  axios: ^0.26.0
+  dayjs: ^1.10.7
   eslint: ^8.6.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-prettier: ^4.0.0
@@ -40,6 +43,8 @@ dependencies:
   '@antv/data-set': 0.11.8
   '@antv/g2': 4.1.39
   antd: 4.18.3_react-dom@17.0.2+react@17.0.2
+  axios: 0.26.0
+  dayjs: 1.10.7
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   reset-css: 5.0.1
@@ -59,6 +64,7 @@ devDependencies:
   '@umijs/plugin-esbuild': 1.4.1_umi@3.5.20
   '@umijs/plugin-preact': 1.0.2_umi@3.5.20
   '@umijs/test': 3.5.20
+  antd-dayjs-webpack-plugin: 1.0.6_dayjs@1.10.7
   eslint: 8.6.0
   eslint-config-prettier: 8.3.0_eslint@8.6.0
   eslint-plugin-prettier: 4.0.0_1c588f61426b1faf18812943f1678311
@@ -2205,6 +2211,14 @@ packages:
       color-convert: 2.0.1
     dev: true
 
+  /antd-dayjs-webpack-plugin/1.0.6_dayjs@1.10.7:
+    resolution: {integrity: sha512-UlK3BfA0iE2c5+Zz/Bd2iPAkT6cICtrKG4/swSik5MZweBHtgmu1aUQCHvICdiv39EAShdZy/edfP6mlkS/xXg==}
+    peerDependencies:
+      dayjs: '*'
+    dependencies:
+      dayjs: 1.10.7
+    dev: true
+
   /antd/4.18.3_react-dom@17.0.2+react@17.0.2:
     resolution: {integrity: sha512-EoCMY8pFKX9IVAc0Bdi3DWR03IIOHa6mTZALOGjrKbPm3kbrcvoBTCNXq4BMeVA1dZbMeoBw46peeJLyMp2avw==, tarball: antd/download/antd-4.18.3.tgz}
     peerDependencies:
@@ -2433,6 +2447,14 @@ packages:
   /aws4/1.11.0:
     resolution: {integrity: sha1-1h9G2DslGSUOJ4Ta9bCUeai0HFk=, tarball: aws4/download/aws4-1.11.0.tgz}
     dev: true
+
+  /axios/0.26.0:
+    resolution: {integrity: sha512-lKoGLMYtHvFrPVt3r+RBMp9nh34N0M8zEfCWqdWZx6phynIEhQqAdydpyBAAG211zlhX9Rgu08cOamy6XjE5Og==}
+    dependencies:
+      follow-redirects: 1.14.9
+    transitivePeerDependencies:
+      - debug
+    dev: false
 
   /babel-core/7.0.0-bridge.0_@babel+core@7.12.10:
     resolution: {integrity: sha512-poPX9mZH/5CSanm50Q+1toVci6pv5KSRv/5TWCwtzQS5XEwn40BcCrgIeMFWP9CKKIniKXNxoIOnOq4VVlGXhg==, tarball: babel-core/download/babel-core-7.0.0-bridge.0.tgz}
@@ -3395,7 +3417,7 @@ packages:
     engines: {node: '>=0.11'}
 
   /dayjs/1.10.7:
-    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==, tarball: dayjs/download/dayjs-1.10.7.tgz}
+    resolution: {integrity: sha512-P6twpd70BcPK34K26uJ1KT3wlhpuOAPoMwJzpsIWUxHZ7wpmbdZL/hQqBDfz7hGurYSa5PhzdhDHtt319hL3ig==}
 
   /debug/2.6.9:
     resolution: {integrity: sha512-bC7ElrdJaJnPbAP+1EotYvqZsb3ecl5wi6Bfi6BJTUcNowp6cvspg0jXznRTKDjm/E7AdgFBVeAPVMNcKGsHMA==, tarball: debug/download/debug-2.6.9.tgz}
@@ -4378,6 +4400,16 @@ packages:
   /flatten/1.0.3:
     resolution: {integrity: sha1-wSg6yfJ7Noq8HjbR/3sEUBowNWs=, tarball: flatten/download/flatten-1.0.3.tgz}
     deprecated: flatten is deprecated in favor of utility frameworks such as lodash.
+    dev: false
+
+  /follow-redirects/1.14.9:
+    resolution: {integrity: sha512-MQDfihBQYMcyy5dhRDJUHcw7lb2Pv/TuE6xP1vyraLukNDHKbDxDNaOE3NbCAdKQApno+GPRyo1YAp89yCjK4w==}
+    engines: {node: '>=4.0'}
+    peerDependencies:
+      debug: '*'
+    peerDependenciesMeta:
+      debug:
+        optional: true
     dev: false
 
   /for-each/0.3.3:

@@ -20,6 +20,11 @@
     component: './domain-filing',
   },
   {
+    path: '/dayjs',
+    layout: false,
+    component: './dayjs',
+  },
+  {
     path: '/manage',
     component: '@/layouts/manage',
     routes: [
@@ -34,7 +39,12 @@
         exact: true,
         path: '/manage/login',
         component: './manage/login',
-        access: 'managePage',
+      },
+      {
+        title: '文章列表',
+        exact: true,
+        path: '/manage/article',
+        component: './manage/article',
       },
     ],
   },

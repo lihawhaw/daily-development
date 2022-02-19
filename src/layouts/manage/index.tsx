@@ -1,5 +1,10 @@
 import { getLocalStorage } from '@/utils'
+import { ConfigProvider } from 'antd'
+import zhCN from 'antd/lib/locale-provider/zh_CN'
+import dayjs from 'dayjs'
+import 'dayjs/locale/zh-cn'
 import { Redirect, useLocation } from 'umi'
+dayjs.locale('zh-cn')
 
 export default function (props: { children: JSX.Element }) {
   const location = useLocation()
@@ -7,5 +12,6 @@ export default function (props: { children: JSX.Element }) {
   const isManage = location.pathname === '/manage'
   if (isManage) return <>{props.children}</>
   if (!getLocalStorage('auth') && isNotLogin) return <Redirect to='/manage/login' />
-  return <>{props.children}</>
+
+  return <ConfigProvider locale={zhCN}>{props.children}</ConfigProvider>
 }
