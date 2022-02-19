@@ -19,6 +19,25 @@
     layout: false,
     component: './domain-filing',
   },
+  {
+    path: '/manage',
+    component: '@/layouts/manage',
+    routes: [
+      {
+        title: '后台管理',
+        exact: true,
+        path: '/manage',
+        component: './manage',
+      },
+      {
+        title: '登录',
+        exact: true,
+        path: '/manage/login',
+        component: './manage/login',
+        access: 'managePage',
+      },
+    ],
+  },
   // {
   //   path: '/',
   //   redirect: './index',
