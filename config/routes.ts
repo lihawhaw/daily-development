@@ -46,6 +46,12 @@
         path: '/manage/article',
         component: './manage/article',
       },
+      {
+        title: '新文章',
+        exact: true,
+        path: '/manage/article/new',
+        component: './manage/article/new',
+      },
     ],
   },
   // {

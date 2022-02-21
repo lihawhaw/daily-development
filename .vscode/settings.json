@@ -12,5 +12,5 @@
   },
   "editor.codeActionsOnSave": ["source.organizeImports", "source.formatDocument", "source.fixAll"],
   "editor.rulers": [120],
-  "cSpell.words": ["antd", "commitlint"]
+  "cSpell.words": ["antd", "bytemd", "commitlint"]
 }

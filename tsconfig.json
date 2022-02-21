@@ -13,6 +13,7 @@
     "paths": {
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
+      // "~": ["node_modules/*"]
     },
     "allowSyntheticDefaultImports": true
   },
