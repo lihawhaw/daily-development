@@ -25,6 +25,12 @@
     component: './dayjs',
   },
   {
+    path: '/auto-identify-link',
+    layout: false,
+    component: './auto-identify-link',
+  },
+
+  {
     path: '/manage',
     component: '@/layouts/manage',
     routes: [
