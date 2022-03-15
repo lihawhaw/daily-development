@@ -27,6 +27,7 @@ specifiers:
   eslint-plugin-react: ^7.28.0
   eslint-plugin-react-hooks: ^4.3.0
   husky: 4.3.0
+  jotai: ^1.6.1
   lint-staged: ^10.0.7
   prettier: ^2.2.0
   prettier-eslint: ^13.0.0
@@ -45,6 +46,7 @@ dependencies:
   antd: 4.18.3_react-dom@17.0.2+react@17.0.2
   axios: 0.26.0
   dayjs: 1.10.7
+  jotai: 1.6.1_react@17.0.2
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   reset-css: 5.0.1
@@ -5921,6 +5923,43 @@ packages:
       - ts-node
       - utf-8-validate
     dev: true
+
+  /jotai/1.6.1_react@17.0.2:
+    resolution: {integrity: sha512-iNKHmpKGN31KXDqxGLsplb4HLTroYtiM7oBEQ9leyoXSEGQGUZKK5IOV4kN6fUmkBSJbwb5WnmInYOYzpjIDOw==}
+    engines: {node: '>=12.7.0'}
+    peerDependencies:
+      '@babel/core': '*'
+      '@babel/template': '*'
+      '@urql/core': '*'
+      immer: '*'
+      optics-ts: '*'
+      react: '>=16.8'
+      react-query: '*'
+      valtio: '*'
+      wonka: '*'
+      xstate: '*'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@babel/template':
+        optional: true
+      '@urql/core':
+        optional: true
+      immer:
+        optional: true
+      optics-ts:
+        optional: true
+      react-query:
+        optional: true
+      valtio:
+        optional: true
+      wonka:
+        optional: true
+      xstate:
+        optional: true
+    dependencies:
+      react: 17.0.2
+    dev: false
 
   /joycon/2.2.5:
     resolution: {integrity: sha1-jUz0y7JUTXt1g8IW/N/sGfa+FhU=, tarball: joycon/download/joycon-2.2.5.tgz}

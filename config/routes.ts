@@ -29,6 +29,11 @@
     layout: false,
     component: './auto-identify-link',
   },
+  {
+    path: '/jotai',
+    layout: false,
+    component: './jotai',
+  },
 
   {
     path: '/manage',
