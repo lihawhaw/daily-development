@@ -6,3 +6,14 @@ declare module '*.svg' {
   const url: string
   export default url
 }
+
+declare module 'moment' {
+  import { Dayjs } from 'dayjs'
+  namespace moment {
+    type Moment = Dayjs
+  }
+  export = moment
+  // export as namespace moment
+}
+
+declare module 'antd-dayjs-webpack-plugin'
