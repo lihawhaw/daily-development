@@ -15,7 +15,7 @@ export default defineConfig({
   routes,
   theme,
   esbuild: {},
-  title: '无名学长',
+  title: '极致源于梦想',
   ignoreMomentLocale: true,
   // proxy: proxy[REACT_APP_ENV || 'dev'],
   manifest: {

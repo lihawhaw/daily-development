@@ -1,8 +1,9 @@
 import { Space } from 'antd'
+import styles from './index.less'
 
 export const FilingFooter = () => {
   return (
-    <div>
+    <div className={styles.footer}>
       <Space>
         <a href='http://www.beian.gov.cn/portal/recordQuery' target='_blank' rel='noreferrer'>
           公安备案号33011002015632
