@@ -2,69 +2,69 @@
   // {
   //   path: '/filing',
   //   layout: false,
-  //   component: './domain-filing',
+  //   component: 'domain-filing',
   // },
   {
     path: '/zhifangtu',
     layout: false,
-    component: './data-analysis',
+    component: 'data-analysis',
   },
   {
     path: '/welcome',
     layout: false,
-    component: './welcome',
+    component: 'welcome',
   },
   {
     path: '/',
     layout: false,
-    component: './domain-filing',
+    component: 'domain-filing',
   },
   {
     path: '/dayjs',
     layout: false,
-    component: './dayjs',
+    component: 'dayjs',
   },
   {
     path: '/auto-identify-link',
     layout: false,
-    component: './auto-identify-link',
+    component: 'auto-identify-link',
   },
   {
     path: '/jotai',
     layout: false,
-    component: './jotai',
+    component: 'jotai',
   },
 
   {
     path: '/manage',
-    component: '@/layouts/manage',
+    component: '../layouts/manage',
     routes: [
       {
         title: '后台管理',
         exact: true,
         path: '/manage',
-        component: './manage',
+        component: 'manage',
       },
       {
         title: '登录',
         exact: true,
         path: '/manage/login',
-        component: './manage/login',
+        component: 'manage/login',
         access: 'managePage',
       },
       {
         title: '文章列表',
         exact: true,
         path: '/manage/article',
-        component: './manage/article',
+        component: 'manage/article',
       },
     ],
   },
   // {
   //   path: '/',
-  //   redirect: './index',
+  //   redirect: 'index',
   // },
   {
-    component: './404',
+    component: '404',
   },
 ]

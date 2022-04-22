@@ -17,7 +17,7 @@ export default function DomainFilingPage() {
   ]
 
   return (
-    <div className={styles.filingWrapper}>
+    <div className={styles.wrapper}>
       <header className={styles.header}>
         <h1>极致源于梦想</h1>
       </header>

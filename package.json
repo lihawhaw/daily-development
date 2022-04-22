@@ -38,7 +38,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "reset-css": "^5.0.1",
-    "umi": "^3.5.20"
+    "umi": "4.0.0-rc.13"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
@@ -48,12 +48,6 @@
     "@types/react-dom": "^17.0.11",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1",
-    "@umijs/plugin-analytics": "^0.2.2",
-    "@umijs/plugin-antd": "^0.15.0",
-    "@umijs/plugin-crossorigin": "^1.2.1",
-    "@umijs/plugin-esbuild": "^1.4.1",
-    "@umijs/plugin-preact": "^1.0.2",
-    "@umijs/test": "^3.5.20",
     "antd-dayjs-webpack-plugin": "^1.0.6",
     "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0",
