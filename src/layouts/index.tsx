@@ -1,10 +1,10 @@
 // import 'antd/dist/antd.min.css'
-import { Outlet } from 'umi'
+
+import { Outlet } from '@umijs/max'
 
 export default function (props: { children: JSX.Element }) {
   return (
     <>
-      {props.children}
       <Outlet />
     </>
   )

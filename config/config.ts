@@ -1,5 +1,5 @@
 // https://umijs.org/config/
-import { defineConfig } from 'umi'
+import { defineConfig } from '@umijs/max'
 // import proxy from './proxy';
 import routes from './routes'
 import theme from './theme'
@@ -8,14 +8,24 @@ import theme from './theme'
 
 export default defineConfig({
   // hash: true,
-  // antd: {},
+  antd: {
+    // configProvider
+    configProvider: {},
+    // themes
+    dark: false,
+    compact: true,
+    // babel-plugin-import
+    import: true,
+    // less or css, default less
+    style: 'less',
+  },
   // dynamicImport: {
   //   loading: '@/components/loading',
   // },
   routes,
   theme,
   // esbuild: {},
-  // title: '极致源于梦想',
+  title: '极致源于梦想',
   ignoreMomentLocale: true,
   // proxy: proxy[REACT_APP_ENV || 'dev'],
   // manifest: {
@@ -43,4 +53,5 @@ export default defineConfig({
   },
   cssLoaderModules: {},
   lessLoader: {},
+  fastRefresh: true,
 })

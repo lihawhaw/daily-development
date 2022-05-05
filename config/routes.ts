@@ -1,4 +1,5 @@
-﻿export default [
+﻿// IBestAFSRoute[]
+export const routes = [
   // {
   //   path: '/filing',
   //   layout: false,
@@ -68,3 +69,5 @@
     component: '404',
   },
 ]
+
+export default routes
