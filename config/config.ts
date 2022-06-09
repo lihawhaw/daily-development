@@ -1,5 +1,5 @@
 // https://umijs.org/config/
-import { defineConfig } from '@umijs/max'
+import { defineConfig } from 'umi'
 // import proxy from './proxy';
 import routes from './routes'
 import theme from './theme'
@@ -7,18 +7,27 @@ import theme from './theme'
 // const { BAIDU_HM_CODE } = process.env
 
 export default defineConfig({
-  // hash: true,
+  npmClient: 'pnpm',
+  publicPath: '/',
+  plugins: [
+    '@umijs/plugins/dist/antd',
+    '@umijs/plugins/dist/request',
+    // '@umijs/plugins/dist/initial-state',
+    // '@umijs/plugins/dist/model',
+  ],
   antd: {
-    // configProvider
-    configProvider: {},
-    // themes
-    dark: false,
-    compact: true,
-    // babel-plugin-import
     import: true,
-    // less or css, default less
     style: 'less',
   },
+  request: {
+    dataField: 'data',
+  },
+  mfsu: {
+    esbuild: true,
+  },
+  // initialState: {
+  //   loading: '@/components/Loading',
+  // },
   // dynamicImport: {
   //   loading: '@/components/loading',
   // },
@@ -26,14 +35,13 @@ export default defineConfig({
   theme,
   // esbuild: {},
   title: '极致源于梦想',
-  ignoreMomentLocale: true,
+  // ignoreMomentLocale: true,
   // proxy: proxy[REACT_APP_ENV || 'dev'],
   // manifest: {
   //   basePath: '/',
   // },
   // fastRefresh: {},
   // nodeModulesTransform: { type: 'none' },
-  mfsu: {},
   // webpack5: {},
   // exportStatic: {},
   // crossorigin: true,
