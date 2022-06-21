@@ -16,4 +16,12 @@ declare module 'moment' {
   // export as namespace moment
 }
 
+declare module 'echarts' {
+  export interface ECharts {
+    getZr: () => {
+      on: (eventName: string, handler: Function, context?: object) => void
+    }
+  }
+}
+
 declare module 'antd-dayjs-webpack-plugin'

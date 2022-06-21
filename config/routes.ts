@@ -35,6 +35,11 @@ export const routes = [
     layout: false,
     component: 'jotai',
   },
+  {
+    path: '/echarts',
+    layout: false,
+    component: 'echarts',
+  },
 
   {
     path: '/manage',
