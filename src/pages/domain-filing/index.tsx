@@ -41,7 +41,7 @@ export default function DomainFilingPage() {
 
               <p>熟悉 Windows、Linux、OS X、Android、iOS、WP8 等系统的开关机。(此段装逼摘至网络😂)</p>
 
-              <p>就单纯的为了折腾，所以创建了这个网站。不知道说些什么，先暂时这样吧…</p>
+              <p>就单纯的为了折腾，所以创建了这个网站。不知道说些什么，先暂时这样吧……</p>
             </div>
           </TabPane>
         </Tabs>
