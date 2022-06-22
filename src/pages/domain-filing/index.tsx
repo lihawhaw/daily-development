@@ -17,7 +17,7 @@ export default function DomainFilingPage() {
   ]
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} data-update-time='202206230000'>
       <header className={styles.header}>
         <h1>极致源于梦想</h1>
       </header>
