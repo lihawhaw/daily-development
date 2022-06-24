@@ -1,6 +1,6 @@
 import styles from './index.css'
 import React, { useLayoutEffect } from 'react'
-import DataSet from '@antv/data-set'
+import DataSet from '@antv/data-set/lib'
 import { Chart } from '@antv/g2'
 // import Tooltip from '@antv/g2/lib/chart/controller/tooltip'
 // import { Chart, registerAction, registerComponentController } from '@antv/g2/lib/core'

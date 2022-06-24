@@ -22,9 +22,9 @@ export default defineConfig({
   request: {
     dataField: 'data',
   },
-  mfsu: {
-    esbuild: true,
-  },
+  // mfsu: {
+  //   esbuild: true,
+  // },
   // initialState: {
   //   loading: '@/components/Loading',
   // },
@@ -59,7 +59,20 @@ export default defineConfig({
     // localsConvention: 'camelCase', // umi3配置 umi4未生效
     // exportLocalsConvention: 'camelCase', // webpack loader 配置 未生效
   },
-  cssLoaderModules: {},
+  cssLoaderModules: {
+    exportLocalsConvention: 'camelCase',
+  },
   lessLoader: {},
   fastRefresh: true,
+  clientLoader: {},
+  chainWebpack: function (memo: any, { env }) {
+    if (env === 'production') {
+      memo.output.filename('[name].[contenthash:8].bundle.js').chunkFilename('chunks/[name].[chunkhash:8].chunk.js')
+    }
+    if (env === 'development') {
+      console.log('memo', memo)
+    }
+  },
+  // https://github.com/umijs/umi-next/issues/851
+  // extraBabelPlugins: process.env.NODE_ENV === 'production' ? ['babel-plugin-dynamic-import-node'] : [],
 })

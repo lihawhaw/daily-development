@@ -2,7 +2,7 @@
 
 import { Outlet } from 'umi'
 
-export default function (props: { children: JSX.Element }) {
+export default function () {
   return (
     <>
       <Outlet />
