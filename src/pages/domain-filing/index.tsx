@@ -1,5 +1,6 @@
 import { Carousel, Image, Space, Tabs } from 'antd'
 import styles from './index.less'
+import { Link } from '@@/exports'
 
 const { TabPane } = Tabs
 
@@ -17,7 +18,7 @@ export default function DomainFilingPage() {
   ]
 
   return (
-    <div className={styles.wrapper} data-update-time='202206250000'>
+    <div className={styles.wrapper} data-update-time='202206250100'>
       <header className={styles.header}>
         <h1>极致源于梦想</h1>
       </header>
@@ -35,7 +36,10 @@ export default function DomainFilingPage() {
           </TabPane>
           <TabPane tab='关于' key='2'>
             <div>
-              <p>本人精通 HTML、CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Python 等单词的拼写</p>
+              <p>
+                本人精通 HTML、CSS、JavaScript、PHP、ASP、C、C++、C#、Java、Python <Link to={'jotai'}>jotai</Link>{' '}
+                <Link to={'/echarts'}>echarts</Link> 等单词的拼写
+              </p>
 
               <p>擅长 Ai、Fw、Fl、Br、Ae、Pr、Id、Ps 等软件的安装与卸载</p>
 
