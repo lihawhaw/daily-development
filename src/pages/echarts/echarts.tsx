@@ -74,7 +74,7 @@ export default class Echarts extends React.Component<IEchartsProps> {
     })
     window.addEventListener('resize', this.resize)
 
-    this.myChart.getZr().on('click', (params: { offsetX: any; offsetY: any }) => {
+    this.myChart.getZr().on('click', params => {
       const pointInPixel = [params.offsetX, params.offsetY]
       if (this.myChart.containPixel('grid', pointInPixel)) {
         const xIndex = this.myChart.convertFromPixel({ seriesIndex: 0 }, [params.offsetX, params.offsetY])[0]

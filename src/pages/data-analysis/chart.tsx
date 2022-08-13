@@ -1,7 +1,7 @@
-import styles from './index.css'
 import DataSet from '@antv/data-set/lib'
 import { Chart } from '@antv/g2'
-import React, { useLayoutEffect } from 'react'
+import { useLayoutEffect } from 'react'
+import styles from './index.css'
 
 export const ChartCom = () => {
   useLayoutEffect(() => {

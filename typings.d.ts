@@ -1,3 +1,4 @@
+// import {EChartsConvertFinder} from 'echarts'
 declare module '*.css'
 declare module '*.less'
 declare module '*.png'
@@ -13,15 +14,23 @@ declare module 'moment' {
     type Moment = Dayjs
   }
   export = moment
-  // export as namespace moment
 }
 
 declare module 'echarts' {
   export interface ECharts {
-    getZr: () => {
-      on: (eventName: string, handler: Function, context?: object) => void
-    }
+    getZr(): EChartsZr
   }
+
+  interface EChartsZr {
+    on(eventName: string, handler: EChartsZrHandler, context?: object): void
+  }
+
+  interface Handler {
+    offsetX: number
+    offsetY: number
+  }
+
+  type EChartsZrHandler = (params: Handler) => void
 }
 
 declare module 'antd-dayjs-webpack-plugin'

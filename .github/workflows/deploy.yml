@@ -10,22 +10,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - name: install pnpm
-        uses: pnpm/action-setup@v2.0.1
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.2
         with:
-          version: 6.x
-      - name: setup node
-        uses: actions/setup-node@v2
+          version: 7
+
+      - name: Set node version to 16
+        uses: actions/setup-node@v3
         with:
-          node-version: 16.x
+          node-version: 16
           cache: 'pnpm'
-      - name: install dependencies
+
+      - name: Install dependencies
         run: pnpm install
-      - name: build
-        env:
-          BAIDU_HM_CODE: ${{ secrets.BAIDU_HM_CODE }}
+
+      - name: Build
         run: pnpm build
+
       - name: deploy
         uses: TencentCloud/cos-action@v1
         with:
@@ -37,3 +41,11 @@ jobs:
           remote_path: /
           accelerate: true
           clean: true
+
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-

@@ -1,6 +1,6 @@
 import { ChartCom } from '@/pages/data-analysis/chart'
-import { Divider } from 'antd'
 import { ChartCom2 } from '@/pages/data-analysis/chart2'
+import { Divider } from 'antd'
 
 export default function DataAnalysis() {
   return (

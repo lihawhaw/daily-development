@@ -1,6 +1,6 @@
+import { Link } from '@@/exports'
 import { Carousel, Image, Space, Tabs } from 'antd'
 import styles from './index.less'
-import { Link } from '@@/exports'
 
 const { TabPane } = Tabs
 

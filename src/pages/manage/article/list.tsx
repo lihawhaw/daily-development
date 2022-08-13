@@ -2,7 +2,7 @@ import { articleApi } from '@/api/article'
 import { IArticleListItem } from '@/api/article.d'
 import { formatDateTime } from '@/utils'
 import { Table } from 'antd'
-import React, { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 export const ArticleListPage = () => {
   const [pageCurrent, setPageCurrent] = useState(1)
