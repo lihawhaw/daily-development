@@ -66,6 +66,18 @@ export const routes = [
       },
     ],
   },
+  {
+    path: '/antd',
+    layout: false,
+    routes: [
+      {
+        title: 'message',
+        exact: true,
+        path: '/antd/message',
+        component: 'antd-example/message',
+      },
+    ],
+  },
   // {
   //   path: '/',
   //   redirect: 'index',

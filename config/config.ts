@@ -20,7 +20,7 @@ export default defineConfig({
     style: 'less',
   },
   request: {
-    dataField: 'data',
+    dataField: '',
   },
   routes,
   theme,
