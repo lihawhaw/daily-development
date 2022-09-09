@@ -1,5 +1,5 @@
-import { Button, message, Modal } from 'antd'
 import { useTestHook } from '@/pages/antd-example/message/hook'
+import { Button, message } from 'antd'
 
 export default function () {
   const testHook = useTestHook()
